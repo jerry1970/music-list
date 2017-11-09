@@ -1,0 +1,6 @@
+{
+    "require": {
+        "devvoh/parable": "^0.12.12",
+        "james-heinrich/getid3": "^1.9"
+    }
+}

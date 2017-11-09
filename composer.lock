@@ -1,0 +1,103 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "61475ec9e98324a054030c0d79fde27c",
+    "content-hash": "351817d9763d2d7dc4948c429c4d9fee",
+    "packages": [
+        {
+            "name": "devvoh/parable",
+            "version": "0.12.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devvoh/parable.git",
+                "reference": "19c7ea9ccb281ee56fa12ea9b3af7ddfa87053cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devvoh/parable/zipball/19c7ea9ccb281ee56fa12ea9b3af7ddfa87053cb",
+                "reference": "19c7ea9ccb281ee56fa12ea9b3af7ddfa87053cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "bin": [
+                "parable"
+            ],
+            "type": "framework",
+            "autoload": {
+                "psr-4": {
+                    "Parable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin de Graaf",
+                    "email": "hello@devvoh.com",
+                    "homepage": "https://devvoh.com"
+                }
+            ],
+            "description": "Parable is a PHP micro framework",
+            "homepage": "http://devvoh.com/parable",
+            "keywords": [
+                "framework",
+                "micro"
+            ],
+            "time": "2017-10-31 22:46:34"
+        },
+        {
+            "name": "james-heinrich/getid3",
+            "version": "v1.9.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JamesHeinrich/getID3.git",
+                "reference": "df9b441e547da1018b1be0e239bee095c9962c96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JamesHeinrich/getID3/zipball/df9b441e547da1018b1be0e239bee095c9962c96",
+                "reference": "df9b441e547da1018b1be0e239bee095c9962c96",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "getid3/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "description": "PHP script that extracts useful information from popular multimedia file formats",
+            "homepage": "http://www.getid3.org/",
+            "keywords": [
+                "codecs",
+                "php",
+                "tags"
+            ],
+            "time": "2017-10-26 18:34:37"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
