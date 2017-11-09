@@ -17,8 +17,10 @@ The script just starts looking for artist directories in the given root.
 
 Some music list properties can be set in `ml.ini` which should be located in the given `root`.
 
+Note: not implemented yet.
+
 Contents of the `ml.ini`:
-```
+```.ini
 list.title
 list.root[] = "..."
 list.root[] = "..."
@@ -47,7 +49,7 @@ When the Artist directory name ends with `[...]`, the contents between the squar
 When the Artist directory has a file `artist.ini`, it can overwrite and add artist properties.
 
 The format of this file is:
-```
+```.ini
 artist.key = "..."
 artist.name = "..."
 artist.country = "..."
@@ -93,7 +95,7 @@ The `seconds` property is calculated from the time of the individual tags and ca
 #### album.ini
 
 Contents of `album.ini`:
-```
+```.ini
 album.date = "..." ; date given in YYYY-mm-dd format
 album.title = "..."
 album.seconds = "..." ; total number of seconds (decimals are allowed)
