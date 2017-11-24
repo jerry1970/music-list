@@ -14,6 +14,9 @@ class Track extends \Parable\ORM\Model
     protected $album;
 
     /** @var string */
+    public $rootKey;
+
+    /** @var string */
     public $artistKey;
 
     /** @var string */
@@ -29,6 +32,8 @@ class Track extends \Parable\ORM\Model
     public $updateDate;
 
     use CustomFields;
+
+    use ErrorField;
 
     /** @var array */
     protected $exportable = ['artistKey', 'albumKey', 'key', 'updateDate', 'customFields'];

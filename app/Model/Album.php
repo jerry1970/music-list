@@ -14,6 +14,9 @@ class Album extends \Parable\ORM\Model
     protected $artist;
 
     /** @var string */
+    public $rootKey;
+
+    /** @var string */
     public $artistKey;
 
     /** @var string */
@@ -34,7 +37,12 @@ class Album extends \Parable\ORM\Model
     /** @var string[] */
     protected $errors = [];
 
+    /** @var bool */
+    protected $isNew = false;
+
     use CustomFields;
+
+    use ErrorField;
 
     /** @var array */
     protected $exportable = ['key', 'updateDate', 'customFields'];
@@ -99,6 +107,24 @@ class Album extends \Parable\ORM\Model
     public function getErrors()
     {
         return $this->errors;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isNew(): bool
+    {
+        return $this->isNew;
+    }
+
+    /**
+     * @param bool $isNew
+     * @return Album
+     */
+    public function setIsNew(bool $isNew): Album
+    {
+        $this->isNew = $isNew;
+        return $this;
     }
 
     public function isDifferent(Album $originalAlbum)

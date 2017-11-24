@@ -26,7 +26,7 @@ list.root[] = "..."
 list.root[] = "..."
 ```
 
-A list can have extra roots marked. `ml` only needs to run once and will also read the extra given roots. 
+A list can have extra roots marked. `ml` only needs to run once and will read the extra given roots. If the current directory should be included, don't forget to include `list.root[] = "."`.
 
 ### Artists
 

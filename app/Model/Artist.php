@@ -22,6 +22,12 @@ class Artist extends \Parable\ORM\Model
     /** @var string */
     protected $tableKey = 'id';
 
+    /** @var Root */
+    protected $root;
+
+    /** @var string */
+    public $rootKey;
+
     /** @var string */
     public $key;
 
@@ -37,10 +43,33 @@ class Artist extends \Parable\ORM\Model
     /** @var Album[] */
     protected $albums;
 
+    /** @var boolean */
+    protected $isNew = false;
+
     use CustomFields;
+
+    use ErrorField;
 
     /** @var array */
     protected $exportable = ['key', 'altKey', 'updateDate', 'customFields'];
+
+    /**
+     * @return Root
+     */
+    public function getRoot(): Root
+    {
+        return $this->root;
+    }
+
+    /**
+     * @param Root $root
+     * @return $this
+     */
+    public function setRoot(Root $root)
+    {
+        $this->root = $root;
+        return $this;
+    }
 
     public function getDisplayName()
     {
@@ -119,6 +148,24 @@ class Artist extends \Parable\ORM\Model
             return true;
         }
         return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isNew(): bool
+    {
+        return $this->isNew;
+    }
+
+    /**
+     * @param bool $isNew
+     * @return Artist
+     */
+    public function setIsNew(bool $isNew): Artist
+    {
+        $this->isNew = $isNew;
+        return $this;
     }
 
 }

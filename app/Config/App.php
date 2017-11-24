@@ -30,7 +30,6 @@ class App implements
                     \Config\Custom::class
                 ],
                 "commands" => [
-                    \Command\HelloWorld::class,
                     \Command\Scan::class,
                 ],
                 "inits" => [
