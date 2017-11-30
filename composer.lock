@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "328d8ca8522f47c22f3784753b235717",
-    "content-hash": "9209f8c5a51c2e898f92cedab43b0739",
+    "hash": "e4c85cc2bd79ca4d7c5316be333b54d5",
+    "content-hash": "64ffa3ce395a463b9f99fbcd310aa717",
     "packages": [
         {
             "name": "ayesh/php-timer",
@@ -58,16 +58,16 @@
         },
         {
             "name": "devvoh/parable",
-            "version": "0.12.13",
+            "version": "0.12.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devvoh/parable.git",
-                "reference": "19c7ea9ccb281ee56fa12ea9b3af7ddfa87053cb"
+                "reference": "5505d854a750ef4c9d868830ea06999fb9dedf40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devvoh/parable/zipball/19c7ea9ccb281ee56fa12ea9b3af7ddfa87053cb",
-                "reference": "19c7ea9ccb281ee56fa12ea9b3af7ddfa87053cb",
+                "url": "https://api.github.com/repos/devvoh/parable/zipball/5505d854a750ef4c9d868830ea06999fb9dedf40",
+                "reference": "5505d854a750ef4c9d868830ea06999fb9dedf40",
                 "shasum": ""
             },
             "require": {
@@ -102,7 +102,7 @@
                 "framework",
                 "micro"
             ],
-            "time": "2017-10-31 22:46:34"
+            "time": "2017-11-17 11:50:10"
         },
         {
             "name": "james-heinrich/getid3",

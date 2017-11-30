@@ -3,6 +3,7 @@
 namespace Command;
 
 use Ayesh\PHP_Timer\Timer;
+use Parable\ORM\Repository;
 
 class Scan extends \Parable\Console\Command
 {
@@ -13,8 +14,6 @@ class Scan extends \Parable\Console\Command
     protected $database;
     /** @var \Parable\ORM\Repository */
     protected $sqliteMasterRepository;
-    /** @var \Parable\ORM\Repository */
-    protected $baseRepository;
     /** @var \Parable\ORM\Repository */
     protected $artistRepository;
     /** @var \Parable\ORM\Repository */
@@ -45,16 +44,10 @@ class Scan extends \Parable\Console\Command
     ) {
         $this->database = $database;
 
-        $this->baseRepository = $repository;
-        $this->sqliteMasterRepository = clone $repository;
-        $this->artistRepository = clone $repository;
-        $this->albumRepository = clone $repository;
-        $this->trackRepository = clone $repository;
-
-        $this->sqliteMasterRepository->setModel(\Parable\DI\Container::create(\Model\SqliteMaster::class));
-        $this->artistRepository->setModel(\Parable\DI\Container::create(\Model\Artist::class));
-        $this->albumRepository->setModel(\Parable\DI\Container::create(\Model\Album::class));
-        $this->trackRepository->setModel(\Parable\DI\Container::create(\Model\Track::class));
+        $this->sqliteMasterRepository = Repository::createInstanceForModelName(\Model\SqliteMaster::class);
+        $this->artistRepository = Repository::createInstanceForModelName(\Model\Artist::class);
+        $this->albumRepository = Repository::createInstanceForModelName(\Model\Album::class);
+        $this->trackRepository = Repository::createInstanceForModelName(\Model\Track::class);
 
         $this->root = $root;
 

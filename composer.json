@@ -1,6 +1,6 @@
 {
     "require": {
-        "devvoh/parable": "^0.12.12",
+        "devvoh/parable": "^0.12",
         "james-heinrich/getid3": "^1.9",
         "ayesh/php-timer": "^1.1"
     }
